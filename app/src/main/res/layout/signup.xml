@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:background="@drawable/screenbackground"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.hp1.finalapplication.Signup"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        app:srcCompat="@drawable/signup"
+        android:id="@+id/ivsignup"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:text="Username:"
+        style="@style/textview_style"
+        android:id="@+id/username1"
+        android:layout_width="wrap_content" />
+
+    <EditText
+        android:inputType="textPersonName"
+        style="@style/editTexttwo_style"
+        android:id="@+id/tvusername"
+        android:layout_weight="0.03"
+        android:hint="Username" />
+
+    <TextView
+        android:text="Password:"
+        style="@style/textview_style"
+        android:id="@+id/tvpass"
+        android:layout_width="wrap_content" />
+
+    <EditText
+        android:inputType="textPassword"
+        style="@style/editText_style"
+        android:id="@+id/etpasswordd"
+        android:layout_weight="0.03"
+        android:hint="Password" />
+
+    <TextView
+        android:text="Age:"
+        style="@style/textview_style"
+        android:id="@+id/tvage"
+        android:layout_width="wrap_content" />
+
+    <EditText
+        android:id="@+id/etage"
+        style="@style/editText_style"
+        android:layout_weight="0.05"
+        android:inputType="textPersonName"
+        android:hint="Insert Age" />
+
+    <TextView
+        android:text="Email"
+        style="@style/textview_style"
+        android:id="@+id/tvmail"
+        android:layout_width="wrap_content" />
+
+    <EditText
+        android:inputType="textPersonName"
+        style="@style/editText_style"
+        android:id="@+id/etemail"
+        android:layout_weight="0.06"
+        android:hint="Insert E-mail" />
+
+    <Button
+        android:text="Sign up"
+        style="@style/button_style3"
+        android:id="@+id/btsignupp"
+        android:layout_height="32dp" />
+</LinearLayout>

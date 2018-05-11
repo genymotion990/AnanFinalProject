@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Final Application</string>
+    <string name="auth_failed">Failed to Sign Up</string>
+</resources>
