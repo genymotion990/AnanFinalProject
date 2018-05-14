@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.FileNotFoundException;
@@ -22,17 +23,25 @@ public class Camera extends AppCompatActivity implements View.OnClickListener {
     Button btCamera,btGalery;
     static final int SELECT_IMAGE=1;
     static final int TAKE_IMAGE=0;
+    TextView tvemail;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_camera);
+        Intent k = getIntent();
+        String name = k.getStringExtra("email");
+
+
         imageView = (ImageView) findViewById(R.id.imgPhoto);
 
         btCamera =(Button) findViewById(R.id.btcap);
         btGalery = (Button) findViewById(R.id.btgalery);
+        tvemail=(TextView)findViewById(R.id.tvemail);
         btCamera.setOnClickListener(this);
         btGalery.setOnClickListener(this);
+        tvemail.setText("your username is: "+name);
+
 
         if(!hasCamera()){
             btCamera.setEnabled(false);

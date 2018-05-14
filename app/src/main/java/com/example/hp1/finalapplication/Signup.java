@@ -1,5 +1,6 @@
 package com.example.hp1.finalapplication;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -89,6 +90,14 @@ public class Signup extends AppCompatActivity implements View.OnClickListener {
                         if (!task.isSuccessful()) {
                             Toast.makeText(Signup.this, R.string.auth_failed,
                                     Toast.LENGTH_SHORT).show();
+                        }else{
+                            String s=new String("registered successfuly");
+                            Intent i=new Intent(getBaseContext(),MainActivity.class);
+                            startActivity(i);
+                            Toast.makeText(Signup.this, s,
+                                    Toast.LENGTH_SHORT).show();
+
+
                         }
 
                         // ...
